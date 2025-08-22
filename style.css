@@ -14,10 +14,12 @@ html,body{
   height: 80px;
   background-color: #0f1111;
   display: flex;
-  justify-content: space-between; /* flag left, nav right */
+  justify-content: space-between; 
   align-items: center;
   position: relative;
 }
+
+
 
 .section {
   list-style: none;
@@ -75,12 +77,12 @@ html,body{
   align-items: center;
 }
 
-/* Dark overlay on background */
+
 .img::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(3, 3, 3, 0.549); /* makes background less visible */
+    background: rgba(3, 3, 3, 0.549); 
     z-index: 0;
 }
 
@@ -97,11 +99,12 @@ html,body{
     display: block;
     border: 5px solid rgb(247, 229, 247);   
     display: inline-block;
-    padding: 5px;                 /* Outer border width */
-    background-color: rgb(113, 111, 111);       /* Outer border color */      
+    padding: 5px;                
+    background-color: rgb(113, 111, 111);           
 }
 
 .mylogo img {
+   display: block; 
     height: 85px;
     width: 120px;
 }
@@ -112,7 +115,7 @@ html,body{
     margin-left: auto;
     height:auto;
     max-width: 600px;
-    background-color: transparent; /* light background for text */
+    background-color: transparent; 
     border-radius: 10px;
     box-sizing: border-box;
     color: white;
@@ -142,14 +145,15 @@ html,body{
     margin-right: 20px;
 }
 .parent:hover {
-  transform: translateY(-2px) scale(1.04); /* Move up and slightly enlarge */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transform: translateY(-2px) scale(1.04); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .section a:hover{
     color: blue;
 }
 .flag img{
+   display: block; 
     height: 85px;
     width: 120px;
    
@@ -186,7 +190,7 @@ h2{
 .skill-c {
   height: 260px;
   flex-basis: 30%;
-  background-color: #c5c6c5b3; /* keep your color */
+  background-color: #c5c6c5b3; 
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
@@ -294,10 +298,10 @@ i{
 }
 
 .footer {
-  max-width:100%;       /* Limit content width */
-  margin: 0 auto;         /* Center horizontally */
+  max-width:100%;       
+  margin: 0 auto;        
   padding: 20px;
-  text-align: center;    /* Equal left/right alignment */
+  text-align: center;    
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
@@ -307,7 +311,7 @@ i{
   font-size: 1.8rem;
   font-weight:800;
   text-align: center;
-  margin-top: 5%;     /* Center the heading */
+  margin-top: 5%;     
   margin-bottom: 2%;
 }
 
@@ -339,7 +343,7 @@ i{
 .footer-icons a {
   position: relative;
   font-size: 1.3rem;
-  color: #020101; /* Optional */
+  color: #020101; 
 }
 
 .love{
@@ -350,8 +354,8 @@ i{
 
 .image {
   display: inline-block;
-  padding: 3px;                 /* Outer border width */
-  background-color: rgba(0, 0, 255, 0.348);       /* Outer border color */
+  padding: 3px;                 
+  background-color: rgba(0, 0, 255, 0.348);       
   border-radius: 50%;
 }
 
@@ -360,7 +364,7 @@ i{
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 3px solid rgba(247, 1, 255, 0.264);         /* Inner border */
+  border: 3px solid rgba(247, 1, 255, 0.264);         
 }
 
 /* ====== RESPONSIVE ====== */
@@ -450,5 +454,28 @@ i{
   }
   .footer-icons {
     gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0; /* Remove padding */
+    width: 100%; /* full width */
+  }
+
+  .flag, .mylogo {
+    margin: 0; /* remove default spacing */
+  }
+
+  .flag img {
+    height: 60px;
+    width: auto; /* keeps aspect ratio */
+  }
+
+  .mylogo img {
+    height: 60px;
+    width: auto;
   }
 }
