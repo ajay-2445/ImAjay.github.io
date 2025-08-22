@@ -1,0 +1,233 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    background-image: url("shivaji.jpg");
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.back {
+  text-align: center;   /* 🔹 Center karega heading ko */
+}
+
+.back h1 {
+  padding-top: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(17, 14, 61);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;   /* 🔹 Heading width = text width */
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+
+/* Hover Animation */
+.back h1:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
+
+/* Underline Animation (only under text) */
+.back h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: crimson;
+  transition: width 0.6s ease;
+}
+
+.back h1:hover::after {
+  width: 100%;   /* 🔹 Sirf text ke niche underline */
+}
+
+
+
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: rgb(85, 23, 23);
+  margin-bottom: 40px;
+}
+
+.intro{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(22, 22, 67);
+  margin-bottom: 20px;
+}
+
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 0 0 calc(45% - 20px);
+  max-width: calc(45% - 20px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.833);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card video {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* 🔹 Responsive for project cards */
+@media (max-width: 900px) {
+  .project-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+
+.achievement h2{
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(85, 23, 23);
+  margin-bottom: 40px;
+}
+
+.achievement-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.achievement-card {
+  background: #f7f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 0 0 calc(30% - 20px); 
+  max-width: calc(30% - 20px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 200px;   /* ✅ keeps full image ratio */
+  object-fit: contain; /* ✅ shows full certificate without cropping */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #f9f9f9; /* ✅ adds light bg if image doesn’t fill card */
+  padding: 5px; 
+}
+
+.achievement-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgb(85, 23, 23);
+}
+
+.achievement-card p {
+  font-size: 0.95rem;
+  color: #030303;
+  line-height: 1.5;
+}
+
+.project-card, .achievement-card {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Added default subtle shadow */
+}
+
+
+/* 🔹 Responsive for achievement cards */
+@media (max-width: 900px) {
+  .achievement-card {
+    flex: 0 0 calc(45% - 20px); 
+    max-width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .achievement-card {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding-bottom: 15px;
+}
+.footer-icons a{
+    color: red;
+    font-size: 1.3rem;
+}
+
+/* 🔹 Extra mobile adjustments */
+@media (max-width: 768px) {
+  .section-title, 
+  .achievement h2 {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .back h1 {
+    font-size: 1.5rem; /* 🔹 smaller heading on mobile */
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card iframe {
+    height: 200px; /* Change for responsiveness */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-icons {
+    gap: 20px; /* Change for responsiveness */
+  }
+}
