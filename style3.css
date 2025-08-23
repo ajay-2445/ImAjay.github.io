@@ -17,7 +17,7 @@ html, body {
 /* ==== Background Section ==== */
 #information {
   position: relative;
-  height: 50vh; /* half screen */
+  height: 50vh; 
   background: url("shivaji.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ html, body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(32, 32, 32, 0.45); /* dark overlay */
+  background: rgba(32, 32, 32, 0.45); 
 }
 
 /* ==== Contact Section ==== */
@@ -94,7 +94,7 @@ html, body {
   flex-direction: column;
   gap: 25px;
   margin-bottom: 50px;
-  align-items: flex-start; /* left align */
+  align-items: flex-start; 
 }
 
 .home {
@@ -181,7 +181,7 @@ html, body {
 
 
 .map-container {
-  margin: 60px auto 0;   /* 🔹 Top 60px, left-right auto => center */
+  margin: 60px auto 0;   
   width: 80%;
   border-radius: 15px;
   overflow: hidden;

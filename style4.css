@@ -19,7 +19,7 @@ body {
 /* ====== Hero Background ====== */
 .blog {
   position: relative;
-  height: 50vh; /* half screen */
+  height: 50vh; 
   background: url("shivaji.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;

@@ -20,7 +20,7 @@ html,body{
 }
 
 .back {
-  text-align: center;   /* 🔹 Center karega heading ko */
+  text-align: center;   
 }
 
 .back h1 {
@@ -31,7 +31,7 @@ html,body{
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
-  display: inline-block;   /* 🔹 Heading width = text width */
+  display: inline-block;   
   transition: color 0.6s ease, transform 0.6s ease;
 }
 
@@ -41,7 +41,6 @@ html,body{
   transform: scale(1.1);
 }
 
-/* Underline Animation (only under text) */
 .back h1::after {
   content: "";
   position: absolute;
@@ -54,7 +53,7 @@ html,body{
 }
 
 .back h1:hover::after {
-  width: 100%;   /* 🔹 Sirf text ke niche underline */
+  width: 100%;  
 }
 
 
@@ -152,11 +151,11 @@ html,body{
 
 .achievement-card img {
   width: 100%;
-  height: 200px;   /* ✅ keeps full image ratio */
-  object-fit: contain; /* ✅ shows full certificate without cropping */
+  height: 200px;   
+  object-fit: contain; 
   border-radius: 8px;
   margin-bottom: 15px;
-  background: #f9f9f9; /* ✅ adds light bg if image doesn’t fill card */
+  background: #f9f9f9; 
   padding: 5px; 
 }
 
@@ -173,7 +172,7 @@ html,body{
 }
 
 .project-card, .achievement-card {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Added default subtle shadow */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
 }
 
 
@@ -215,19 +214,19 @@ html,body{
   }
 
   .back h1 {
-    font-size: 1.5rem; /* 🔹 smaller heading on mobile */
+    font-size: 1.5rem; 
     text-align: center;
   }
 }
 
 @media (max-width: 600px) {
   .project-card iframe {
-    height: 200px; /* Change for responsiveness */
+    height: 200px;
   }
 }
 
 @media (max-width: 600px) {
   .footer-icons {
-    gap: 20px; /* Change for responsiveness */
+    gap: 20px; 
   }
 }
