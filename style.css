@@ -19,8 +19,6 @@ html,body{
   position: relative;
 }
 
-
-
 .section {
   list-style: none;
   display: flex;
@@ -47,7 +45,6 @@ html,body{
   text-align: left;
 }
 
-/* Added for modern look */
 .section li a {
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -59,8 +56,19 @@ html,body{
 .menu-toggle {
   display: none;
   font-size: 24px;
-  color: white;
+  color: rgb(255, 1, 1);
   cursor: pointer;
+}
+
+.mylogo img {
+  height: auto;
+   display: block; 
+    width: 120px;
+}
+.flag img{
+   display: block; 
+    height: auto;
+    width: 120px;   
 }
 
 .img {
@@ -103,11 +111,6 @@ html,body{
     background-color: rgb(113, 111, 111);           
 }
 
-.mylogo img {
-   display: block; 
-    height: 85px;
-    width: 120px;
-}
 
 .box {
     position: relative;
@@ -152,12 +155,7 @@ html,body{
 .section a:hover{
     color: blue;
 }
-.flag img{
-   display: block; 
-    height: 85px;
-    width: 120px;
-   
-}
+
 h3{
     text-align: center;
 }
@@ -370,7 +368,7 @@ i{
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
   .section {
-    display: none;  /* hide by default */
+    display: none;  
     flex-direction: column;
     width: 100%;
     background: #0f1111;
@@ -401,12 +399,6 @@ i{
     display: block;
   }
 
-  /* Change for responsiveness */
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 15px;
-  }
 
   /* Change for responsiveness: hero section */
   .img {
@@ -457,12 +449,13 @@ i{
   }
 }
 
+/* media for navbar */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0; /* Remove padding */
-    width: 100%; /* full width */
+    padding: 0; 
+    width: 100%; 
   }
 
   .flag, .mylogo {
@@ -470,12 +463,12 @@ i{
   }
 
   .flag img {
-    height: 60px;
+    height: 80px;
     width: auto; /* keeps aspect ratio */
   }
 
   .mylogo img {
-    height: 60px;
+    height: 80px;
     width: auto;
   }
 }

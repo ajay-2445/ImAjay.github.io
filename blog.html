@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+      <header>
+  <div class="navbar">
+    <div class="flag">
+        <img src="flag.png" alt="flag">
+    </div>
+
+    <!-- Hamburger menu (hidden on desktop) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul class="section" id="nav-links">   
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="mylogo">
+      <img src="logo.png" alt="mylogo">
+    </div>
+  </div>
+</header>
+
     <div class="blog"></div>
 
   <!-- projects-section -->
@@ -84,5 +110,16 @@
     </div>
   <p>&copy; 2025 Ajay Kahar. All rights reserved.</p>
 </footer>
+
+<!-- JavaScript for Navbar -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
