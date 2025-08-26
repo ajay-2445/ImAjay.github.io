@@ -219,6 +219,7 @@ h3{
 }
 .skl{
   font-style: normal;
+  font-size: 2.5rem;
   color: #880a0a;
   margin-top: 5%;
 }
@@ -306,7 +307,7 @@ i{
 
 .footer .about {
   color: #880a0a;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight:800;
   text-align: center;
   margin-top: 5%;     
@@ -315,12 +316,11 @@ i{
 
 .footer .about-me {
   font-size: 1.1rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(23, 11, 57);
 }
 
 .footer .contact{
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: #880a0a;
   font-weight: 800;
   margin-top: 5%;

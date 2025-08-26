@@ -71,6 +71,23 @@ html,body{
     width: 120px;   
 }
 
+/* Resume Button Style */
+.resume-btn {
+  display: block;
+  height: 80px;
+  width: 150px;
+  color: white;               
+  border-radius: 5px;         
+  font-weight: bold;          
+}
+
+/* Hover Effect */
+.resume-btn:hover {
+  color: white;
+  background-color: #c82333;  
+  transition: transform 0.3s ease;   
+}
+
 
 .container {
     background-image: url("shivaji.jpg");
