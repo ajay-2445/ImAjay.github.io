@@ -92,6 +92,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .blog h1 {
@@ -187,7 +188,7 @@ body {
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
-  min-height: 600px; /* ensures more height */
+  min-height: 600px; 
 }
 
 .blog-header {
@@ -369,12 +370,12 @@ footer p {
 
   .flag img {
     height: 80px;
-    width: auto; /* keeps aspect ratio */
+    width: 110px; 
   }
 
   .mylogo img {
     height: 80px;
-    width: auto;
+    width: 100px;
   }
 }
 

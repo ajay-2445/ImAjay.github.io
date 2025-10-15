@@ -359,12 +359,12 @@ html,body{
 
   .flag img {
     height: 80px;
-    width: auto; /* keeps aspect ratio */
+    width: 110px; /* keeps aspect ratio */
   }
 
   .mylogo img {
     height: 80px;
-    width: auto;
+    width: 100px;
   }
 }
 

@@ -103,6 +103,7 @@ html,body{
     height: 50vh;
     width: 100%;
     z-index: 0;
+    padding: 80px;
 }
 
 .back {
@@ -327,17 +328,17 @@ html,body{
   }
 
   .flag, .mylogo {
-    margin: 0; /* remove default spacing */
+    margin: 0;
   }
 
   .flag img {
     height: 80px;
-    width: auto; /* keeps aspect ratio */
+    width: 110px;
   }
 
   .mylogo img {
     height: 80px;
-    width: auto;
+    width: 100px;
   }
 }
 

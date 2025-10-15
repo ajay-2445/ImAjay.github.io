@@ -90,6 +90,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 #information::after {
@@ -311,17 +312,17 @@ footer {
   }
 
   .flag, .mylogo {
-    margin: 0; /* remove default spacing */
+    margin: 0; 
   }
 
   .flag img {
     height: 80px;
-    width: auto; /* keeps aspect ratio */
+    width: 110px;
   }
 
   .mylogo img {
     height: 80px;
-    width: auto;
+    width: 100px;
   }
 }
 
@@ -336,11 +337,11 @@ footer {
     top: 80px;
     left: 0;
     padding: 15px 0;
-    z-index: 1000;   /* stay above content */
+    z-index: 1000;   
   }
 
   .section.active {
-    display: flex; /* toggle shows menu */
+    display: flex; 
   }
 
   .menu-toggle {

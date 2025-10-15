@@ -113,7 +113,8 @@ html,body{
     display: block;
     border: 5px solid rgb(247, 229, 247);   
     display: inline-block;
-    padding: 5px;                
+    margin-top: 50px;  
+    margin-left: 20px;              
     background-color: rgb(113, 111, 111);           
 }
 
@@ -410,12 +411,13 @@ i{
   .img {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
   }
   .myphoto img {
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
+    
   }
   .parent {
     width: 90%;
@@ -465,16 +467,16 @@ i{
   }
 
   .flag, .mylogo {
-    margin: 0; /* remove default spacing */
+    margin: 0; 
   }
 
   .flag img {
     height: 80px;
-    width: auto; /* keeps aspect ratio */
+    width: 110px;
   }
 
   .mylogo img {
     height: 80px;
-    width: auto;
+    width: 100px;
   }
 }
