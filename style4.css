@@ -1,4 +1,4 @@
-/* ====== Global Reset ====== */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+html,body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #200f0f;
   background: #f9f9f9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: radial-gradient(circle at top, #111827 0, #020617 60%);
 }
 
 .navbar {
@@ -84,7 +85,7 @@ body {
 }
 
 
-/* ====== Hero Background ====== */
+
 .blog {
   position: relative;
   height: 50vh; 
@@ -92,7 +93,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
 .blog h1 {
@@ -101,7 +101,7 @@ body {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* ====== Projects Container ====== */
+
 .projects-container {
   width: 80%;
   max-width: 1100px;
@@ -110,7 +110,7 @@ body {
   flex: 1;
 }
 
-/* ====== Blog Container ====== */
+
 .blog-container {
   width: 80%;
   max-width: 800px;
@@ -120,20 +120,19 @@ body {
 }
 
 
-/* ====== Section Titles ====== */
 .sectiontitle {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  color: #222;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  color: #ffffff;
   font-weight: 700;
 }
 .section-title{
-    font-size: 3rem;
+    font-size: 2rem;
   text-align: center;
-  margin-bottom: 1rem;
-  color: #222;
+  margin-bottom: 2%;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -141,10 +140,10 @@ body {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: #00e1ff;
 }
 
-/* ====== Projects Section ====== */
+
 .projects-list {
     text-align: center;
   list-style: none;
@@ -157,7 +156,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: radial-gradient(circle at top, #a1b1d2 0, #8091db 60%);
   margin: 0.5rem 0;
   padding: 1.2rem 1.8rem;
   border-radius: 12px;
@@ -175,15 +174,15 @@ body {
 
 .project-count {
   background: #007bff;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.95rem;
 }
 
-/* ====== Blog Journey Section ====== */
+
 .blog-post {
-  background: white;
+  background: radial-gradient(circle at top, #a1b1d2 0, #8091db 60%);
   padding: 3rem;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -212,24 +211,24 @@ body {
 
 .blog-content p {
   margin-bottom: 1.2rem;
-  color: #444;
+  color: #000000;
   font-size: 1.05rem;
   line-height: 1.8;
 }
 
-/* ===== Highlighted Text ===== */
+
 .highlight,
 strong {
   color: #007bff;
   font-weight: bold;
-  background: #eef5ff;
+  background: #94bef8;
   padding: 2px 6px;
   border-radius: 4px;
 }
 
-/* ====== Contact Form ====== */
+
 .contact-form {
-  background: white;
+  background: radial-gradient(circle at top, #a1b1d2 0, #8091db 60%);
   padding: 3rem;
   margin: 3rem auto;
   max-width: 800px;
@@ -270,7 +269,7 @@ strong {
   background: #ff0000;
 }
 
-/* ====== Footer ====== */
+
 footer{
     padding-top: 20px;
 }
@@ -290,17 +289,17 @@ footer{
 .footer-icons a {
   position: relative;
   font-size: 1.3rem;
-  color: #ff1717;
+  color: #00eaff;
 }
 
 footer p {
     text-align: center;
-  color: #aaa;
+  color: #d3d1d1;
   font-size: 0.95rem;
   margin-top: 5px;
 }
 
-/* ====== Responsive Design ====== */
+/* Responsive Design  */
 @media (max-width: 768px) {
   .blog h1 {
     font-size: 2rem;

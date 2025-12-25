@@ -2,6 +2,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+     background: radial-gradient(circle at top, #111827 0, #020617 60%);
 }
 * {
     margin: 0;
@@ -90,7 +91,7 @@ html,body{
 /* Hover Effect */
 .resume-btn:hover {
   color: white;
-  background-color: #c82333;  
+  background-color: #1cfff4;  
   transition: transform 0.3s ease;   
 }
 
@@ -111,10 +112,10 @@ html,body{
 }
 
 .back h1 {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 2.5rem;
   font-weight: 700;
-  color: rgb(17, 14, 61);
+  color: rgb(7, 0, 103);
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
@@ -146,21 +147,21 @@ html,body{
 
 
 .projects {
-  padding: 60px 20px;
+  margin-top: 3%;
   text-align: center;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  color: rgb(85, 23, 23);
-  margin-bottom: 40px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
 }
 
 .intro{
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(22, 22, 67);
-  margin-bottom: 20px;
+  color: rgb(0, 191, 255);
+  margin-bottom: 3%;
 }
 
 .project-section {
@@ -171,7 +172,7 @@ html,body{
 }
 
 .project-card {
-  background: rgb(255, 255, 255);
+  background: radial-gradient(circle at top, #a1b1d2 0, #8091db 60%);
   border-radius: 12px;
   padding: 20px;
   flex: 0 0 calc(45% - 20px);
@@ -183,7 +184,7 @@ html,body{
 
 .project-card:hover {
     color: white;
-    background-color: rgba(0, 0, 255, 0.833);
+   background: radial-gradient(circle at top, #0e5eff 0, #516be0 60%);
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
@@ -207,9 +208,10 @@ html,body{
 
 .achievement h2{
   text-align: center;
-  font-size: 2.5rem;
-  color: rgb(85, 23, 23);
-  margin-bottom: 40px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .achievement-section {
@@ -217,11 +219,10 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 40px 20px;
 }
 
 .achievement-card {
-  background: #f7f5f5;
+  background: radial-gradient(circle at top, #a1b1d2 0, #8091db 60%);
   border-radius: 12px;
   padding: 20px;
   flex: 0 0 calc(30% - 20px); 
@@ -234,6 +235,7 @@ html,body{
 .achievement-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: radial-gradient(circle at top, #0e5eff 0, #516be0 60%);
 }
 
 .achievement-card img {
@@ -249,7 +251,7 @@ html,body{
 .achievement-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: rgb(85, 23, 23);
+  color: rgb(0, 0, 255);
 }
 
 .achievement-card p {
@@ -285,8 +287,9 @@ html,body{
     padding-bottom: 15px;
 }
 .footer-icons a{
-    color: red;
+    color: rgb(0, 251, 255);
     font-size: 1.3rem;
+    margin-top: 3%;
 }
 
 /* 🔹 Extra mobile adjustments */
