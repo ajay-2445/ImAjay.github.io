@@ -134,7 +134,7 @@ html,body{
     position: absolute;
     left: 0;
     top: 0;
-    width: 200px; 
+    width: 00px; 
     height: 100%;
     background: linear-gradient(to right, rgb(0, 0, 0), transparent);
 }
@@ -142,7 +142,6 @@ html,body{
 
 .education {
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 
@@ -150,6 +149,8 @@ html,body{
   width: 100%;
   border-collapse: collapse;
   font-size: 20px; 
+   border-radius: 12px;
+  overflow: hidden;
 }
 
 .education th,
@@ -158,6 +159,7 @@ html,body{
   padding: 15px 20px; 
   text-align: left;
   transition: all 0.3s ease; 
+  border-radius: 12px;
 }
 
 .education th {
@@ -406,4 +408,10 @@ html,body{
     width: 100%;
     display: block;
   }
+}
+
+
+section > h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
