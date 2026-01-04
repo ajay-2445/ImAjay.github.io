@@ -346,4 +346,20 @@ footer {
     font-size: 16px; } 
   .education th, .education td { 
     padding: 10px;
-  } }
+  }
+ }
+
+@media (max-width: 768px) {
+  .education table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .education td,
+  .education th {
+    padding: 8px;
+    word-wrap: break-word;
+  }
+}
+
+
