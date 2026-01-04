@@ -291,6 +291,10 @@ html,body{
     font-size: 1.3rem;
     margin-top: 3%;
 }
+.footer-icons a:hover {
+  color: #000dff;
+  transform: scale(1.2); /
+}
 
 /* 🔹 Extra mobile adjustments */
 @media (max-width: 768px) {
@@ -356,11 +360,11 @@ html,body{
     top: 80px;
     left: 0;
     padding: 15px 0;
-    z-index: 1000;   /* stay above content */
+    z-index: 1000;   
   }
 
   .section.active {
-    display: flex; /* toggle shows menu */
+    display: flex; 
   }
 
   .menu-toggle {
