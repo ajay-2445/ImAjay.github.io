@@ -218,6 +218,9 @@ body {
   flex-basis: 30%;
   height: 250px;
 }
+.skill-c p{
+  font-size: 1rem;
+}
 
 .skill-c:hover {
   background: rgba(56,189,248,0.15);
@@ -442,8 +445,6 @@ footer {
     display: block;
   }
 
-
-  /* Responsive*/
   .img {
     flex-direction: column;
     text-align: center;
